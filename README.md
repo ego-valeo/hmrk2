@@ -71,16 +71,32 @@ x(t) = \Phi(t)x(0) + \int_0^t \Phi(t-\tau)Bu(\tau)d\tau
      y(t) = Cx(t) + Du(t)
 
 다차 상태 공간 방정식 의 풀이
-# 1차 시스템
-x(t) = e^(at)x(0) + ∫e^(a(t-τ))bu(τ)dτ
+### 1차 시스템
+\[ 
+x(t) = e^{At} x(0) + \int_0^t e^{A(t-\tau)} b u(\tau) d\tau 
+\]
 
-# n차 시스템
-x(t) = exp(At)x(0) + ∫exp[A(t-τ)]Bu(τ)dτ
+### n차 시스템
+\[ 
+x(t) = \exp(At)x(0) + \int_0^t \exp[A(t - \tau)] B u(\tau) d\tau 
+\]
 
-x(s) = [sI - A]^(-1)x(0) + [sI - A]^(-1)BU(s)
+### 상태 공간 표현
+\[ 
+x(s) = [I - A]^{-1} x(0) + [I - A]^{-1} B U(s) 
+\]
 
-Φ(s) = [sI - A]^(-1)
+### 전이 함수
+\[ 
+\Phi(s) = [I - A]^{-1} 
+\]
 
-Φ(t) = L^(-1)[Φ(s)]
+### 전이 함수의 라플라스 변환
+\[ 
+\Phi(t) = \mathcal{L}^{-1} \Phi(s) 
+\]
 
-x(t) = Φ(t) · x(0) + ∫Φ(t-τ)bu(τ)dτ
+### 최종 해
+\[ 
+x(t) = \Phi(t) \cdot x(0) + \int_0^t \Phi(t - \tau) b u(\tau) d\tau 
+\]
