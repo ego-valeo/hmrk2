@@ -7,9 +7,9 @@
 상태변수를 설정한다.
 ![image](https://github.com/user-attachments/assets/0f08e127-b848-4143-87d1-c73e78386dc1)
 EX1 의 그림에서 물체 M의 운동은 다음과 같이 기술 될 수 있다.
-\[ 
-$ M \frac{d^2 y(t)}{dt^2} + b \frac{d y(t)}{dt} + k y(t) = r(t) $
-\]
+$$\[ 
+ M \frac{d^2 y(t)}{dt^2} + b \frac{d y(t)}{dt} + k y(t) = r(t) $
+\]$$
 이 식에서 상태 변수를 설정하면
 x_1(t) = y(t), \quad x_2(t) = \frac{dy(t)}{dt}
 \]
